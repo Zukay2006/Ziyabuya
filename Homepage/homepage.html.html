@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>homepage - Helping Hands</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 0 1rem;
+    }
+
+    header {
+      background-color: #ff6600;
+      padding: 1rem 0;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0.5rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      font-size: 1rem;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #fff;
+      color: #ff6600;
+    }
+
+    h1, h2 {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+
+    section, h2, p, ul, blockquote, .social-icons {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+
+    h1.visible, h2.visible, section.visible, p.visible, ul.visible, blockquote.visible, .social-icons.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    img.responsive-img {
+      max-width: 80%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img.responsive-img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 20px rgba(255,102,0,0.6);
+    }
+
+    .social-icons img {
+      width: 50px;
+      height: 50px;
+      margin: 0 0.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.2);
+      box-shadow: 0 0 10px rgba(255,102,0,0.6);
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+
+    ul li a:hover {
+      color: #ff6600;
+    }
+
+    blockquote {
+      font-style: italic;
+      border-left: 4px solid #ff6600;
+      padding-left: 1rem;
+      margin: 1rem 0;
+      color: #555;
+    }
+
+    @media (min-width: 600px) {
+      h1 { font-size: 2.2rem; }
+      h2 { font-size: 1.9rem; }
+    }
+
+    @media (min-width: 992px) {
+      h1 { font-size: 2.5rem; }
+      h2 { font-size: 2rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="Homepage.html">Homepage</a></li>
+      <li><a href="../About us/About us.html">About us</a></li>
+      <li><a href="../Adopt/Adopt.html">Adopt</a></li>
+      <li><a href="../Volunteer/Volunteer.html">Volunteer</a></li>
+      <li><a href="../Contact us/Contact us.html">Contact us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<h1>Welcome to Helping Hands</h1>
+
+<div class="center">
+  <img src="Images/Helping hands logo.png" alt="Helping Hands Logo" class="responsive-img">
+</div>
+
+<h2>About Our Organisation</h2>
+<p>
+  Every year in South Africa, over 20,000 animals are abandoned, injured, or unhealthy. 
+  Helping Hands Rescue Animal South Africa was founded by Athol Fenderick in October 2009 to provide shelter, nutrition, and care. 
+  Through fundraising and community events, we raise awareness about animal cruelty and support no-kill shelters.
+</p>
+
+<div class="center">
+  <picture>
+    <source media="(max-width: 600px)" srcset="Images/Animals being cared for-small.jpeg">
+    <source media="(max-width: 992px)" srcset="Images/Animals being cared for-medium.jpeg">
+    <img src="C:\Users\zukha\OneDrive\Documents\Helping Hands Website\Homepage\Images\Animals being cared for.jpeg" alt="Animals being cared for" class="responsive-img">
+  </picture>
+</div>
+
+<blockquote class="center">
+  "The real heroes are the animals that have been hurt but continue to love us unconditionally."
+</blockquote>
+
+<div class="social-icons center">
+  <img src="Images/facebook.jpeg" alt="Facebook">
+  <img src="Images/tik tok.png" alt="TikTok">
+</div>
+<p class="center">Join the conversation on all social media platforms about changing the lives of our pets and best friends.</p>
+
+<h2>Quick Statistic</h2>
+<p>87% of animals rescued by Helping Hands find their “furever” homes within the first 6 months of rescue!</p>
+
+<h2>Fun Facts About Our Rescued Friends</h2>
+<ul>
+  <li>Every rescued animal is given a name that matches its personality.</li>
+  <li>3 out of 5 volunteers secretly admit they have a “favorite rescue” they can’t stop visiting.</li>
+  <li>A rabbit and a stray dog became inseparable after being rescued on the same day.</li>
+</ul>
+
+<section>
+  <h2>References</h2>
+  <p><a href="https://www.pexels.com/search/animal" target="_blank">Pexels</a></p>
+  <p><a href="https://unsplash.com/s/photos/animal" target="_blank">Unsplash</a></p>
+</section>
+
+<script>
+  // Fade-in animation on scroll
+  document.addEventListener("DOMContentLoaded", function() {
+    const elements = document.querySelectorAll("section, h2, p, ul, blockquote, .social-icons");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.1 });
+
+    elements.forEach(el => observer.observe(el));
+  });
+</script>
+
+</body>
+</html>
+ 
